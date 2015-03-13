@@ -5,6 +5,10 @@ body {
   background-color: #455A6A;
 }
 
+a:hover {
+  color: #FF9800;
+}
+
 .container {
   padding: 20px 0;
 }
@@ -13,6 +17,7 @@ body {
   background-color: transparent;
   color: #FF9800;
   margin-top: 100px;
+  height: 600px;
 }
 
 .hello {
@@ -24,6 +29,11 @@ body {
   .icon-github-01 {
     font-size: 2em;
   }
+  
+  .icon-linkedin, .icon-instagram, .icon-facebook {
+    font-size: 1.7em;
+  }
+
   .container .jumbotron {
   background-color: transparent;
   color: #FF9800;
@@ -57,9 +67,15 @@ body {
 }
 
 /* Navbar */
-.navbar-default {
+.navbar-fixed-bottom {
   background-color: transparent;
   border-color: transparent;
+}
+
+.navbar-fixed-top {
+  background-color: #455A64;
+  border-color: #455A64;
+  display: none;
 }
 
 .navbar-brand {
@@ -70,10 +86,104 @@ body {
   color: #FF9800;
 }
 
+.navbar-default .navbar-right li a {
+  font-size: 1.2em;
+}
+
+.navbar-black {
+  color: #212121;
+}
+
 .navbar-default .navbar-nav li a:hover {
-  color: #CFD8DC;
+  /*color: #CFD8DC;*/
+  color: #212121;
 }
 
 #about {
+  background-color: #CFD8DC;
+  font-size: 1.2em;
+  line-height: 38px;
+  padding-bottom: 50px;
+}
+
+.heading {
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.toolkit-heading {
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.tip {
+  color: #607D8B;
+  padding-bottom: 20px;
+  border-left: none;
+}
+
+#toolkit {
+  background-color: #ffffff;
+  padding-bottom: 50px;
+}
+
+#icon {
+  font-size: 3em;
+  display: inline-block;
+  text-align: left;
+  line-height: 1.5em;
+  width: 42px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#projects {
+  background-color: #CFD8DC;
+  font-size: 1.2em;
+  line-height: 38px;
+  padding-bottom: 50px;
+}
+
+.toolkit-header {
+  border-bottom: 2px solid black;
+}
+
+.github {
+  width: 30%;
+}
+
+.github a:hover {
+  color: #FF9800;
+}
+
+footer {
+  font-size: 1em;
+  height: 75px;
+  color: #ffffff;
+}
+
+footer p {
+  margin-top: 28px;
+}
+
+.heart {
+  color: #D32F2F;
+}
+
+.empire {
+  color: #000;
+}
+
+.btn {
+  margin-top: 100px;
   background-color: #607D8B;
+  border-color: #607D8B;
+  display: none;
+}
+
+.btn:hover {
+  background-color: #FF9800;
+  color: #000;
 }
