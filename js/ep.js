@@ -1,39 +1,10 @@
-$(function(){
-  $(".hello").typed({
-    strings: ["I'm Ethan^1500, and I enjoy ^600 programming", "I'm Ethan, and I enjoy ^400 solving problems", "I'm Ethan, and I enjoy ^900 building experiences", "I'm Ethan, and I enjoy ^3000 the simple things."],
-    typeSpeed: 60,
-    callback: function (){
-      $('.btn').fadeIn(1000, "linear");
-    }
-  });
-});
+$(document).ready(function() {
+  // Text variables
+  var texas = "I'm currently a fourth-year student at The University of Texas studying Management Information Systems.";
+  var goals = "I love engineering valuable desktop and mobile experiences. Not only do you have to build the product, but you also have to manage it as well.";
+  var paper = "I was one bureaucratic piece of paper from adding a CS major to my formal education. Instead, I've continued to follow my passion outside of school, including currently reading CLRS to learn the proper use of data structures and simple algorithms.";
 
-$(function() {
-  $('.jumbotron').waypoint(
-    function(direction) {
-      if (direction == 'down') {
-        $('.navbar-fixed-top').fadeIn("slow", "linear", function() {
-          $('.navbar-fixed-bottom').fadeOut("fast", "linear");
-        });
-      } else if (direction == 'up') {
-        $('.navbar-fixed-top').fadeOut("fast", "linear", function() {
-          $('.navbar-fixed-bottom').fadeIn("slow", "linear");
-        });
-      }
-    }
-  )
-});
-
-/*
-  Easing function for anchor links,
-  from Start Bootstrap
- */
-$(function() {
-  $('a.page-scroll').bind('click', function(event) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-      scrollTop: $($anchor.attr('href')).offset().top
-    }, 1200, 'easeInOutExpo');
-    event.preventDefault();
-  });
+  Tipped.create('#texas', texas, { position: 'left', size: 'large' });
+  Tipped.create('#goals', goals, { position: 'rightbottom', size: 'large' });
+  Tipped.create('#paper', paper, { position: 'rightbottom', size: 'large' });
 });
