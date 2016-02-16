@@ -1,2 +1,5 @@
 # Secrets, yo
 *.py
+.sass-cache/
+node_modules/
+*.map
