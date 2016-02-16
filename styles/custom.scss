@@ -8,7 +8,7 @@ $linecolor: #6e3000;
 // Breakpoints
 $tablet: new-breakpoint(max-width 972px 8);
 $mobile: new-breakpoint(max-width 768px 8);
-$mobile320: new-breakpoint(max-width 320px 8);
+$mobile320: new-breakpoint(max-width 400px 8);
 
 .hero-page {
   background-color: darken($bgcolor, 0%);

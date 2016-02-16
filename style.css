@@ -382,7 +382,7 @@ html {
   @media screen and (max-width: 768px) {
     .hero-wrapper {
       font-size: 1em; } }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 400px) {
     .hero-wrapper {
       font-size: .9em; } }
 
