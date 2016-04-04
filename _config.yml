@@ -1,0 +1,12 @@
+# Site settings
+title: Ethan Perez
+email: ethan@ethanperez.com
+description: >
+  The ramblings of a Millenial on entrepreneurship, technology, and Kanye West.
+url: "http://ethanperez.com"
+permalink: /posts/:title
+twitter_username: ethanperez44
+github_username: ethanperez
+
+# Build settings
+markdown: kramdown

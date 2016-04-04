@@ -119,3 +119,66 @@ $mobile320: new-breakpoint(max-width 400px 8);
     }
   }
 }
+
+// Brand page
+.brand-page {
+  background-color: darken($bgcolor, 0%);
+  min-height: 100vh;
+  color: $textcolor;
+}
+
+header {
+  @include outer-container();
+  text-align: center;
+  h1 {
+    margin-top: 0px;
+    padding-top: 1em;
+  }
+}
+
+section.video {
+  @include outer-container();
+  @include span-columns(8);
+  @include shift(2);
+
+  margin-bottom: 30px;
+
+  @include media($mobile) {
+    @include span-columns(7);
+    @include shift(.5);
+  }
+}
+
+.video-wrapper {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+
+  embed,
+  object,
+  iframe {
+    @include position(absolute, 0px null null 0px);
+    @include size(100%);
+  }
+}
+
+section.about {
+  @include outer-container();
+  width: 100%;
+  text-align: center;
+
+  .about-tile {
+    @include span-columns(4);
+    @include omega();
+    background-color: $linecolor;
+
+    @include media($mobile) {
+      @include span-columns(8);
+    }
+  }
+}
+
+header.company {
+  background-color: $bgcolor;
+}
